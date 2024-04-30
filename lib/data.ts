@@ -17,12 +17,12 @@ const data = {
   ],
   products: [
     {
-      name: 'Paints || Colors',
-      slug: 'white-color',
+      name: 'Coatings',
+      slug: 'coatings-1',
       category: 'Paints',
-      image: '/images/white-color.jpg',
-      price: 30,
-      brand: 'Hayat',
+      image: '/images/paint-1.jpg',
+      price: 15,
+      brand: 'Coatings',
       rating: 2.4,
       numReviews: 14,
       countInStock: 20,
