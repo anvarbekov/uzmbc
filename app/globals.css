@@ -544,6 +544,9 @@ main {
   justify-content: center;
 }
 
+.dropdown-content{
+  background-color: white;
+}
 
 
 
