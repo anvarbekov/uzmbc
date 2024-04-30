@@ -1,0 +1,602 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  text-transform: none;
+}
+
+.card{
+  background-color: #eeeeee;
+}
+
+.input{
+  background-color: white;
+  color: black;
+}
+
+.bg-base-200{
+  background-color: white;
+  color: black;
+}
+.menu li > *:not(ul):not(.menu-title):not(details).active{
+  color: white;
+}
+
+/* ------------------ scroll styles ------------------- */
+
+::-webkit-scrollbar{
+  background: linear-gradient(45deg, rgb(17, 24, 52), rgb(3, 109, 231));
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, rgb(17, 52, 52), teal);
+}
+
+/* ------------------ scroll styles ------------------- */
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  overflow: hidden;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -------------- start uzmbc css code ------------------ */
+
+/* Products styles */
+.flex__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product__card{
+  width: 300px;
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, .4);
+  scale: .98;
+  transition: all .3s ease;
+}
+
+.product__card:hover{
+  scale: 1;
+}
+
+.product__img-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.product__img-box-inner{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.product__img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.steps .step::after{
+  background-color: white;
+  color: #222831;
+}
+
+.steps .step-accent:after{
+  background-color: #00D7C0;
+}
+
+.steps .step::before{
+  background-color: white;
+  color: #222831;
+}
+
+.btn-primary{
+  background-color: #222831;
+  color: white;
+  border: 1px solid black;
+}
+.btn-primary:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+
+@media (max-width: 768px){
+  .flex__container{
+    align-items: center;
+    justify-content: center;
+  }
+  .product__img-box{
+    justify-content: flex-start;
+  }
+  .product__card{
+    width: 100%;
+  }
+  .product__img-box{
+    width: 200px;
+    border-radius: 10px;
+  }
+  .product__img-box-inner{
+    width: 170px;
+    height: 170px;
+  }
+}
+/* Products styles */
+
+.header__logo {
+  max-width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+html,
+body {
+  background-color: white;
+  color: black;
+}
+
+.screen__color,
+main {
+  background-color: white;
+  color: black;
+}
+.swiper__container{
+  margin-bottom: 550px;
+}
+
+.swiper__inner{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 550px;
+  margin-bottom: 50px;
+}
+
+.swiper__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper__img-info{
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.swiper__img-info > h2{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.write__btn {
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 1px solid gold;
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: .5s ease;
+  letter-spacing: 1px;
+}
+
+.write__btn:hover{
+  background-color: gold;
+  color: black;
+}
+
+.text__black{
+  color: black;
+}
+
+.company{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 120px;
+  margin-bottom: 100px;
+  row-gap: 20px;
+  text-align: center;
+}
+
+.company > h3{
+  font-size: 2.5rem;
+}
+
+/* two section */
+
+.two__section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
+
+.section__left{
+  width: 45%;
+  text-align: center;
+}
+.section__right{
+  width: 45%;
+  text-align: center;
+}
+
+.section__left .section__title{
+  font-size: 2.5rem;
+}
+.section__left .section__subtitle{
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.person__img{
+  width: 500px;
+}
+
+.icon__card{
+  width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  border-radius: 10px;
+}
+
+.icon__box{
+  background-color: #F5F5F5;
+  border-radius: 50%;
+}
+
+.icon__card .icon__card-icon{
+  font-size: 4rem;
+  color: #008BD2;
+  padding: 10px;
+  transition: .5s ease;
+}
+
+.icon__card:hover .icon__card-icon{
+    animation: icons__anim .4s ease alternate;
+}
+
+@keyframes icons__anim {
+    0%{
+      scale: 1;
+    }
+    50%{
+      scale: 1.3;
+    }
+    100%{
+      scale: 1;
+    }
+}
+
+.icons__card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.truck__section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.truck__section-left{
+  width: 45%;
+  text-align: center;
+}
+.truck__section-right{
+  width: 45%;
+}
+.truck__img{
+  width: 450px;
+}
+.truck__title{
+  font-size: 3rem;
+  text-align: left;
+}
+
+.badge {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+
+/* footer styles */
+
+.footer{
+  background-color: white;
+  color: black;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+}
+
+.address__footer,
+.footer__map,
+.logo__footer {
+  width: 33%;
+}
+
+.footer__map {
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 0px 4px 4px rgba(240, 240, 240, .4);
+}
+
+.logo__footer > img {
+  width: 200px;
+}
+
+.address__footer > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-weight: bold;
+}
+.address__footer > h3 > svg{
+  color: #61A118;
+}
+
+.phone__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone__number > a {
+  color: #3293E6;
+  font-size: .8rem;
+}
+
+.company__image {
+  margin-bottom: 550px;
+}
+.company__img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.company__info{
+  margin-top: 550px;
+}
+
+.company__history{
+  padding: 100px;
+}
+
+.company__history > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.company__history > p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* management styles */
+.management{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.management > h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.management__cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 150px;
+}
+
+.management__card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* button styles */
+.button {
+  height: 45px;
+  width: 150px;
+  border: 1px solid gold;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: .5px .5px 150px #252525;
+}
+
+.type1::after {
+  content: "RAHMAT";
+  height: 45px;
+  width: 150px;
+  background-color: gold;
+  color: #000;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "YOZING";
+  height: 45px;
+  width: 150px;
+  background-color: gold;
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type2::after{
+  content: "SUBMIT";
+}
+.type2::before{
+  content: "YUBORISH";
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+/* button styles */
+
+.icon__contact{
+  background-color: gold;
+  color: black;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 690px) {
+  html {
+    font-size: 14px;
+  }
+  .md-hidden{
+    display: none;
+  }
+  .truck__section{
+    flex-direction: column-reverse;
+  }
+  .truck__section-left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .truck__section-right, .section__left, .section__right{
+    width: 100%;
+  }
+  .truck__title{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+.footer__map {
+  width: 280px;
+  height: 150px;
+}
+.address__footer,
+.footer__map,
+.logo__footer {
+  width: 100%;
+}
+.management__cards{
+  flex-direction: column;
+}
+.company__history {
+  padding: 100px 0;
+}
+}
