@@ -87,7 +87,7 @@ const ContactPage = () => {
                   MANZIL
                 </h2>
                 <p className="mt-1">
-                  O'zbekiston Respublikasi, Andijon shahri, Bobur shoh ko'chasi,
+                  Ozbekiston Respublikasi, Andijon shahri, Bobur shoh kochasi,
                   73-uy.
                 </p>
               </div>
