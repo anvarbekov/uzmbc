@@ -24,7 +24,7 @@ const AdminLayout = async ({
     <div className="relative flex flex-grow">
       <div className="w-full grid md:grid-cols-5">
         <div className="bg-base-200">
-          <ul className="menu bg-white">
+          <ul className="menu">
             <li>
               <Link
                 className={'dashboard' === activeItem ? 'active' : ''}
