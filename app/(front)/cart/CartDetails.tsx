@@ -1,7 +1,6 @@
 'use client'
 
 import useCartService from '@/lib/hooks/useCartStore'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -18,7 +17,7 @@ export default function CartDetails() {
   if (!mounted) return <></>
 
   return (
-    <>
+    <div className='mb-10'>
       <h1 className="py-4 text-2xl">Shopping Cart</h1>
 
       {items.length === 0 ? (
@@ -101,6 +100,6 @@ export default function CartDetails() {
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }
