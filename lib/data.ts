@@ -20,7 +20,7 @@ const data = {
       name: 'Coatings',
       slug: 'coatings-1',
       category: 'Paints',
-      image: '/images/paint-1.jpg',
+      image: '/images/paint-1.png',
       price: 15,
       brand: 'Coatings',
       rating: 2.4,
