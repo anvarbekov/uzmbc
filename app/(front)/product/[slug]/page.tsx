@@ -32,7 +32,7 @@ export default async function ProductDetails({
 
   return (
     <>
-      <div className="my-2">
+      <div className="my-2 mb-10">
         <Link className='text-2xl' href="/allProducts"><FaPersonWalkingArrowLoopLeft /></Link>
       </div>
       <div className="grid md:grid-cols-3 md:gap-3">

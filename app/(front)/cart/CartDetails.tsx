@@ -76,7 +76,7 @@ export default function CartDetails() {
               </tbody>
             </table>
           </div>
-          <div>
+          <div className='mt__cart'>
             <div className="card bg-base-300">
               <div className="card-body">
                 <ul>
