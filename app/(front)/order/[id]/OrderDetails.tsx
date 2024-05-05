@@ -91,9 +91,9 @@ export default function OrderDetails({
                 {shippingAddress.postalCode}, {shippingAddress.country}{' '}
               </p>
               {isDelivered ? (
-                <div className="text-success">Delivered at {deliveredAt}</div>
+                <div className="text-success">Yetkazib berilgan {deliveredAt}</div>
               ) : (
-                <div className="text-error">Not Delivered</div>
+                <div className="text-error">Yetkazib berilmagan</div>
               )}
             </div>
           </div>
@@ -103,22 +103,22 @@ export default function OrderDetails({
               <h2 className="card-title">Payment Method</h2>
               <p>{paymentMethod}</p>
               {isPaid ? (
-                <div className="text-success">Paid at {paidAt}</div>
+                <div className="text-success">Toʻlangan {paidAt}</div>
               ) : (
-                <div className="text-error">Not Paid</div>
+                <div className="text-error">Toʻlanmagan</div>
               )}
             </div>
           </div>
 
           <div className="card bg-base-300 mt-4">
             <div className="card-body">
-              <h2 className="card-title">Items</h2>
+              <h2 className="card-title">Mahsulotlar</h2>
               <table className="table">
                 <thead>
                   <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
+                    <th>Mahsulot</th>
+                    <th>Miqdor</th>
+                    <th>Narx</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -154,29 +154,29 @@ export default function OrderDetails({
         <div>
           <div className="card bg-base-300">
             <div className="card-body">
-              <h2 className="card-title">Order Summary</h2>
+              <h2 className="card-title">Buyurtma xulosasi</h2>
               <ul>
                 <li>
                   <div className="mb-2 flex justify-between">
-                    <div>Items</div>
+                    <div>Mahsulotlar</div>
                     <div>${itemsPrice}</div>
                   </div>
                 </li>
                 <li>
                   <div className="mb-2 flex justify-between">
-                    <div>Tax</div>
+                    <div>Taksi</div>
                     <div>${taxPrice}</div>
                   </div>
                 </li>
                 <li>
                   <div className="mb-2 flex justify-between">
-                    <div>Shipping</div>
+                    <div>Yetkazish</div>
                     <div>${shippingPrice}</div>
                   </div>
                 </li>
                 <li>
                   <div className="mb-2 flex justify-between">
-                    <div>Total</div>
+                    <div>Umumiy narx</div>
                     <div>${totalPrice}</div>
                   </div>
                 </li>
@@ -203,7 +203,7 @@ export default function OrderDetails({
                       {isDelivering && (
                         <span className="loading loading-spinner"></span>
                       )}
-                      Mark as delivered
+                      Yetkazildi
                     </button>
                   </li>
                 )}

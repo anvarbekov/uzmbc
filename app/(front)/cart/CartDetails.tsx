@@ -30,9 +30,9 @@ export default function CartDetails() {
             <table className="table">
               <thead>
                 <tr>
-                  <th>Item</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
+                  <th>Mahsulot</th>
+                  <th>Miqdor</th>
+                  <th>Narx</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,7 +82,7 @@ export default function CartDetails() {
                 <ul>
                   <li>
                     <div className="pb-3 text-xl">
-                      Subtotal ({items.reduce((a, c) => a + c.qty, 0)}) : $
+                      Umumiy ({items.reduce((a, c) => a + c.qty, 0)}) : $
                       {itemsPrice}
                     </div>
                   </li>
@@ -91,7 +91,7 @@ export default function CartDetails() {
                       onClick={() => router.push('/shipping')}
                       className="btn btn-primary w-full"
                     >
-                      Proceed to Checkout
+                      Davom eting
                     </button>
                   </li>
                 </ul>

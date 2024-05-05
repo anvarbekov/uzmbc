@@ -66,7 +66,7 @@ export default async function ProductDetails({
               <div className="divider"></div>
             </li>
             <li>
-              Description: <p>{product.description}</p>
+              Izoh: <p>{product.description}</p>
             </li>
           </ul>
         </div>
@@ -74,13 +74,13 @@ export default async function ProductDetails({
           <div className="card mb-10 bg-base-300 shadow-xl mt-3 md:mt-0">
             <div className="card-body">
               <div className="mb-2 flex justify-between">
-                <div>Price</div>
+                <div>Narx</div>
                 <div>${product.price}</div>
               </div>
               <div className="mb-2 flex justify-between">
-                <div>Status</div>
+                <div>Holat</div>
                 <div>
-                  {product.countInStock > 0 ? 'In stock' : 'Unavailable'}
+                  {product.countInStock > 0 ? 'Sotuvda mavjud' : 'Mavjud emas'}
                 </div>
               </div>
               {product.countInStock !== 0 && (
