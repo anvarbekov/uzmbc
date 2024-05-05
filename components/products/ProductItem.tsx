@@ -6,7 +6,7 @@ import { Rating } from './Rating'
 
 export default function ProductItem({ product }: { product: Product }) {
   return (
-    <div className="md:block product__card flex items-center gap-x-1.5">
+    <div className="md:block product__card mb-10 flex items-center gap-x-1.5">
        <div className='product__img-box'>
         <div className='product__img-box-inner'>
           <Link href={`/product/${product.slug}`}>

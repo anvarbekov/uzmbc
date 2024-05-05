@@ -28,11 +28,11 @@ export default function AddToCart({ item }: { item: OrderItem }) {
     </div>
   ) : (
     <button
-      className="btn btn-primary w-full mb-10"
+      className="btn btn-primary w-full"
       type="button"
       onClick={addToCartHandler}
     >
-      savatchaga qoshish
+      Savatchaga qoshish
     </button>
   )
 }

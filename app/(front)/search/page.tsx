@@ -102,9 +102,9 @@ export default async function SearchPage({
     sort,
   })
   return (
-    <div className="grid md:grid-cols-5 md:gap-5">
+    <div className="grid md:grid-cols-5 md:gap-5 mb-10">
       <div>
-        <div className="text-xl pt-3">Department</div>
+        <div className="text-xl pt-3">Bolimlar</div>
         <div>
           <ul>
             <li>
@@ -114,7 +114,7 @@ export default async function SearchPage({
                 }`}
                 href={getFilterUrl({ c: 'all' })}
               >
-                Any
+                Har qanday
               </Link>
             </li>
             {categories.map((c: string) => (
@@ -132,7 +132,7 @@ export default async function SearchPage({
           </ul>
         </div>
         <div>
-          <div className="text-xl pt-3">Price</div>
+          <div className="text-xl pt-3">Narxi boyicha</div>
           <ul>
             <li>
               <Link
@@ -141,7 +141,7 @@ export default async function SearchPage({
                 }`}
                 href={getFilterUrl({ p: 'all' })}
               >
-                Any
+                Har qanday
               </Link>
             </li>
             {prices.map((p) => (
@@ -159,7 +159,7 @@ export default async function SearchPage({
           </ul>
         </div>
         <div>
-          <div className="text-xl pt-3">Customer Review</div>
+          <div className="text-xl pt-3">Mijozlar</div>
           <ul>
             <li>
               <Link
@@ -168,7 +168,7 @@ export default async function SearchPage({
                   'all' === rating && 'link-primary'
                 }`}
               >
-                Any
+                Har qanday
               </Link>
             </li>
             {ratings.map((r) => (
