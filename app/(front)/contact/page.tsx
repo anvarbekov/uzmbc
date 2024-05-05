@@ -113,7 +113,7 @@ const ContactPage = () => {
             </h2>
             <div className="relative mb-4">
               <label htmlFor="name" className="leading-7 text-sm text-gray-600">
-                Name
+                Ismingiz
               </label>
               <input
                 type="text"
@@ -126,7 +126,7 @@ const ContactPage = () => {
               <label
                 htmlFor="email"
                 className="leading-7 text-sm text-gray-600">
-                Email
+                Elektron pochtangiz
               </label>
               <input
                 type="email"
@@ -139,7 +139,7 @@ const ContactPage = () => {
               <label
                 htmlFor="message"
                 className="leading-7 text-sm text-gray-600">
-                Message
+                Xabaringiz
               </label>
               <textarea
                 id="message"

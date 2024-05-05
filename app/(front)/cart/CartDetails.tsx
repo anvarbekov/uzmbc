@@ -18,11 +18,11 @@ export default function CartDetails() {
 
   return (
     <div className='mb-10'>
-      <h1 className="py-4 text-2xl">Shopping Cart</h1>
+      <h1 className="py-4 text-2xl">Xarid savati</h1>
 
       {items.length === 0 ? (
         <div>
-          Cart is empty. <Link href="/allProducts">Go shopping</Link>
+          Cart is empty. <Link style={{color: "teal", textShadow: "1px 1px 4px teal", fontWeight: "bold", fontSize: "1rem"}} href="/allProducts">Mahsulotlar</Link>
         </div>
       ) : (
         <div className="grid md:grid-cols-4 md:gap-5">

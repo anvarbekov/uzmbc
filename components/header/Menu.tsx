@@ -34,17 +34,17 @@ const Menu = () => {
         <ul className="flex items-stretch">
          <li className='md-hidden'>
             <Link className='btn btn-ghost rounded-btn' href={"/allProducts"}>
-                AllProducts
+                Mahsulotlar
             </Link>
          </li>
          <li className='md-hidden'>
             <Link className='btn btn-ghost rounded-btn' href={"/company"}>
-                Company
+                Kompaniya haqida
             </Link>
          </li>
          <li className='md-hidden'>
             <Link className='btn btn-ghost rounded-btn' href={"/contact"}>
-                Contact
+                Kontaktlar
             </Link>
          </li>
           <li>

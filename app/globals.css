@@ -517,10 +517,10 @@ main {
 }
 
 .type2::after{
-  content: "SUBMIT";
+  content: "RAHMAT";
 }
 .type2::before{
-  content: "YUBORISH";
+  content: "YUBORING";
 }
 
 .type1:hover::after {
